@@ -3,11 +3,12 @@ package com.moldir.api.rest.Controller;
 import com.moldir.api.rest.Models.User;
 import com.moldir.api.rest.UserRepo.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
+@Controller
 public class APIController {
 
     @Autowired
@@ -15,7 +16,7 @@ public class APIController {
 
     @GetMapping(value = "/")
     public String getPage() {
-        return "Welcome";
+        return "index";
     }
 
     @GetMapping(value = "/users")
