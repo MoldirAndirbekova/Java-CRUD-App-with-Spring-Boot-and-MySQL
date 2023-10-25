@@ -1,1 +1,2 @@
-app/* linguist-documentation=false
+*.java linguist-language=Java
+*.html linguist-language=HTML
