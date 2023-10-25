@@ -1,8 +1,9 @@
-package com.moldir.api.rest.Models;
+package com.moldir.api.rest.user;
 
 import jakarta.persistence.*;
 
 @Entity
+@Table(name="user")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
